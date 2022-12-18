@@ -6,10 +6,10 @@
 loadrt [KINS]KINEMATICS
 loadrt [EMCMOT]EMCMOT servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS
 loadrt hostmot2
-loadrt hm2_rpspi config="num_encoders=1 num_pwmgens=0 num_stepgens=5" 
+loadrt hm2_rpspi config="num_encoders=1 num_pwmgens=1 num_stepgens=5" 
 setp    [HMOT](CARD0).watchdog.timeout_ns 50000000
 loadrt pid names=pid.x,pid.y,pid.z,pid.s
-loadusr -W hal_input -n 8Bitdo SN30 Pro
+# loadusr -W hal_input -n 8Bitdo SN30 Pro
 
 
 addf [HMOT](CARD0).read          servo-thread
@@ -200,16 +200,20 @@ net z-enable     => [HMOT](CARD0).stepgen.02.enable
 #  SPINDLE
 #*******************
 
-#setp   pid.s.Pgain     [SPINDLE_0]P
-#setp   pid.s.Igain     [SPINDLE_0]I
-#setp   pid.s.Dgain     [SPINDLE_0]D
-#setp   pid.s.bias      [SPINDLE_0]BIAS
-#setp   pid.s.FF0       [SPINDLE_0]FF0
-#setp   pid.s.FF1       [SPINDLE_0]FF1
-#setp   pid.s.FF2       [SPINDLE_0]FF2
-#setp   pid.s.deadband  [SPINDLE_0]DEADBAND
-#setp   pid.s.maxoutput [SPINDLE_0]MAX_OUTPUT
-#setp   pid.s.error-previous-target true
+setp   [HMOT](CARD0).pwmgen.00.scale [SPINDLE_0]MAX_OUTPUT
+
+setp   pid.s.Pgain     [SPINDLE_0]P
+setp   pid.s.Igain     [SPINDLE_0]I
+setp   pid.s.Dgain     [SPINDLE_0]D
+setp   pid.s.bias      [SPINDLE_0]BIAS
+setp   pid.s.FF0       [SPINDLE_0]FF0
+setp   pid.s.FF1       [SPINDLE_0]FF1
+setp   pid.s.FF2       [SPINDLE_0]FF2
+setp   pid.s.deadband  [SPINDLE_0]DEADBAND
+setp   pid.s.maxoutput [SPINDLE_0]MAX_OUTPUT
+setp   pid.s.error-previous-target true
+setp   hm2_7c80.0.pwmgen.00.out0.invert_output true
+
 
 #net spindle-index-enable  <=> pid.s.index-enable
 #net spindle-enable        =>  pid.s.enable
@@ -219,13 +223,13 @@ net z-enable     => [HMOT](CARD0).stepgen.02.enable
 
 # ---setup spindle control signals---
 
-#net spindle-vel-cmd-rps        <=  spindle.0.speed-out-rps
-#net spindle-vel-cmd-rps-abs    <=  spindle.0.speed-out-rps-abs
-#net spindle-vel-cmd-rpm        <=  spindle.0.speed-out
-#net spindle-vel-cmd-rpm-abs    <=  spindle.0.speed-out-abs
-#net spindle-enable             <=  spindle.0.on
-#net spindle-cw                 <=  spindle.0.forward
-#net spindle-ccw                <=  spindle.0.reverse
+net spindle-vel-cmd-rps        <=  spindle.0.speed-out-rps
+net spindle-vel-cmd-rps-abs    <=  spindle.0.speed-out-rps-abs
+net spindle-vel-cmd-rpm        <=  spindle.0.speed-out [HMOT](CARD0).pwmgen.00.value
+net spindle-vel-cmd-rpm-abs    <=  spindle.0.speed-out-abs
+net spindle-enable             <=  spindle.0.on [HMOT](CARD0).pwmgen.00.enable
+net spindle-cw                 <=  spindle.0.forward [HMOT](CARD0).ssr.00.out-01
+net spindle-ccw                <=  spindle.0.reverse [HMOT](CARD0).ssr.00.out-02
 #net spindle-brake              <=  spindle.0.brake
 #net spindle-revs               =>  spindle.0.revs
 #net spindle-at-speed           =>  spindle.0.at-speed
@@ -234,7 +238,7 @@ net z-enable     => [HMOT](CARD0).stepgen.02.enable
 
 # ---Setup spindle at speed signals---
 
-#sets spindle-at-speed true
+# sets spindle-at-speed true
 
 
 #******************************
@@ -244,12 +248,13 @@ net z-enable     => [HMOT](CARD0).stepgen.02.enable
 #  ---HALUI signals---
 
 net axis-select-x  halui.axis.x.select
-#net jog-x-pos      halui.axis.x.plus input.1.abs-x-is-pos
-#net jog-x-neg      halui.axis.x.minus input.1.abs-x-is-neg
-#net jog-x-analog   halui.axis.x.analog input.1.abs-x-position
-net jog-x-pos      halui.axis.x.plus input.1.abs-x-is-pos
-net jog-x-neg      halui.axis.x.minus input.1.abs-x-is-neg
-net jog-x-analog   halui.axis.x.analog halui.joint.0.analog input.1.abs-x-position halui.axis.jog-speed halui.joint.jog-speed
+# Commented out controller (input.x) lines pending some work to make it start even if controller is not present. 12/17/22
+#net jog-x-pos      halui.axis.x.plus #input.1.abs-x-is-pos
+#net jog-x-neg      halui.axis.x.minus #input.1.abs-x-is-neg
+#net jog-x-analog   halui.axis.x.analog #input.1.abs-x-position
+net jog-x-pos      halui.axis.x.plus #input.1.abs-x-is-pos
+net jog-x-neg      halui.axis.x.minus #input.1.abs-x-is-neg
+net jog-x-analog   halui.axis.x.analog halui.joint.0.analog halui.axis.jog-speed halui.joint.jog-speed #input.1.abs-x-position
 
 net x-is-homed     halui.joint.0.is-homed
 #net axis-select-y  halui.axis.y.select
