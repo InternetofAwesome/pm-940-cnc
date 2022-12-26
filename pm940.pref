@@ -66,4 +66,5 @@ run_from_line = no_run
 unlock_way = no
 show_preview_on_offset = False
 use_keyboard_shortcuts = True
+show_keyboard_on_file_selection = False
 
