@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=CNC Mill
+Icon=linuxcncicon
+Exec=/usr/bin/linuxcnc '/home/sam/linuxcnc/pm-970-cnc/pm940.ini'
