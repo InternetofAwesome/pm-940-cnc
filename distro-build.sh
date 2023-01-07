@@ -6,6 +6,7 @@
 #    run `vncpasswd -service` to add hashed password to above config file
 # make sure SPI is enabled in rpi-config
 # Add `export DISPLAY=:0` to ~/.bashrc to make it easier to launch/test via ssh
+# To open .desktop files without prompt, open file browser, edit>preferences>General "Don't ask options on launch executable file"
 
 
 set -ex
