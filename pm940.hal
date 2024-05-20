@@ -11,11 +11,13 @@ setp    [HMOT](CARD0).watchdog.timeout_ns 50000000
 loadrt pid names=pid.x,pid.y,pid.z,pid.s
 # loadusr -W hal_input -n 8Bitdo SN30 Pro
 
-#PID Auto tune
-#loadusr at_pid names=pid.x,pid.y,pid.z,pid.s
-setp pid.x.tune-effort 0.1
-setp pid.x.tune-mode 1
-setp pid.x.tune-start 1
+# PIN ALIASES - GIVE THEM MNEMONIC NAMES
+alias pin [HMOT](CARD0).ssr.00.out-03 spindle-fan
+alias pin [HMOT](CARD0).ssr.00.out-04 oiler
+alias pin hm2_7c80.0.inmux.00.input-10 xhlfb
+alias pin hm2_7c80.0.inmux.00.input-11 yhlfb
+alias pin hm2_7c80.0.inmux.00.input-12 zhlfb
+alias pin hm2_7c80.0.inmux.00.input-13-not probe
 
 #[HMOT](CARD0).stepgen.00.position-fb
 #joint.2.motor-pos-fb
@@ -81,7 +83,7 @@ setp   pid.x.error-previous-target true
 # This setting is to limit bogus stepgen
 # velocity corrections caused by position
 # feedback sample time jitter.
-setp   pid.x.maxerror 0.000500
+setp   pid.x.maxerror 0.2500
 
 net x-index-enable  <=> pid.x.index-enable
 net x-enable        =>  pid.x.enable
@@ -134,7 +136,7 @@ setp   pid.y.error-previous-target true
 # This setting is to limit bogus stepgen
 # velocity corrections caused by position
 # feedback sample time jitter.
-setp   pid.y.maxerror 0.000500
+setp   pid.y.maxerror 0.250000
 
 net y-index-enable  <=> pid.y.index-enable
 net y-enable        =>  pid.y.enable
@@ -187,7 +189,7 @@ setp   pid.z.error-previous-target true
 # This setting is to limit bogus stepgen
 # velocity corrections caused by position
 # feedback sample time jitter.
-setp   pid.z.maxerror 0.000500
+setp   pid.z.maxerror 0.2500
 
 net z-index-enable  <=> pid.z.index-enable
 net z-enable        =>  pid.z.enable
@@ -249,12 +251,12 @@ setp   hm2_7c80.0.pwmgen.00.out0.invert_output true
 #net spindle-output        <=  pid.s.output
 
 # ---setup spindle control signals---
-
 net spindle-vel-cmd-rps        <=  spindle.0.speed-out-rps
 net spindle-vel-cmd-rps-abs    <=  spindle.0.speed-out-rps-abs
 net spindle-vel-cmd-rpm        <=  spindle.0.speed-out [HMOT](CARD0).pwmgen.00.value
 net spindle-vel-cmd-rpm-abs    <=  spindle.0.speed-out-abs
-net spindle-enable             <=  spindle.0.on [HMOT](CARD0).pwmgen.00.enable
+net spindle-enable             <=  spindle.0.on [HMOT](CARD0).pwmgen.00.enable spindle-fan
+
 net spindle-cw                 <=  spindle.0.forward [HMOT](CARD0).ssr.00.out-01
 net spindle-ccw                <=  spindle.0.reverse [HMOT](CARD0).ssr.00.out-02
 #net spindle-brake              <=  spindle.0.brake
