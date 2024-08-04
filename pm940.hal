@@ -18,6 +18,8 @@ alias pin hm2_7c80.0.inmux.00.input-10 xhlfb
 alias pin hm2_7c80.0.inmux.00.input-11 yhlfb
 alias pin hm2_7c80.0.inmux.00.input-12 zhlfb
 alias pin hm2_7c80.0.inmux.00.input-13-not probe
+alias pin [HMOT](CARD0).ssr.00.out-00 xy-drive-enable
+alias pin [HMOT](CARD0).ssr.00.out-05 z-drive-enable
 
 #[HMOT](CARD0).stepgen.00.position-fb
 #joint.2.motor-pos-fb
@@ -301,7 +303,7 @@ net jog-selected-neg      halui.axis.selected.minus
 net spindle-manual-cw     halui.spindle.0.forward
 net spindle-manual-ccw    halui.spindle.0.reverse
 net spindle-manual-stop   halui.spindle.0.stop
-net machine-is-on         halui.machine.is-on  [HMOT](CARD0).ssr.00.out-00
+net machine-is-on         halui.machine.is-on  xy-drive-enable z-drive-enable
 #net jog-speed             halui.axis.jog-speed
 net MDI-mode              halui.mode.is-mdi
 
