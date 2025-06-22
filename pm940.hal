@@ -11,6 +11,22 @@ setp    [HMOT](CARD0).watchdog.timeout_ns 50000000
 loadrt pid names=pid.x,pid.y,pid.z,pid.s
 # loadusr -W hal_input -n 8Bitdo SN30 Pro
 
+# manual mdi mode switching
+##############################################################
+loadrt and2 count=1          # XY enable = machine-on AND MDI
+addf  and2.0   servo-thread
+
+# signals
+net machine-on  halui.machine.is-on => and2.0.in0 [HMOT](CARD0).ssr.00.out-05 [HMOT](CARD0).stepgen.02.enable      # Z-drive stepgen enable connected here
+net mdi-mode     halui.mode.is-mdi     => and2.0.in1  # use .is-auto too if desired
+
+net xy-drive-en  and2.0.out => [HMOT](CARD0).ssr.00.out-00 [HMOT](CARD0).stepgen.00.enable [HMOT](CARD0).stepgen.01.enable pid.x.enable pid.y.enable
+
+# Z stays live whenever the machine is on
+#net z-drive-en   machine-on => [HMOT](CARD0).ssr.00.out-05 [HMOT](CARD0).stepgen.02.enable
+
+##############################################################
+
 # PIN ALIASES - GIVE THEM MNEMONIC NAMES
 alias pin [HMOT](CARD0).ssr.00.out-03 spindle-fan
 alias pin [HMOT](CARD0).ssr.00.out-04 oiler
@@ -88,14 +104,14 @@ setp   pid.x.error-previous-target true
 setp   pid.x.maxerror 0.2500
 
 net x-index-enable  <=> pid.x.index-enable
-net x-enable        =>  pid.x.enable
+#net x-enable        =>  pid.x.enable
 net x-pos-cmd       =>  pid.x.command
 net x-pos-fb        =>  pid.x.feedback
 net x-output        <=  pid.x.output
 
 # Step Gen signals/setup
 
-setp   [HMOT](CARD0).stepgen.00.enable          true
+#setp   [HMOT](CARD0).stepgen.00.enable          true
 setp   [HMOT](CARD0).stepgen.00.dirsetup        [JOINT_0]DIRSETUP
 setp   [HMOT](CARD0).stepgen.00.dirhold         [JOINT_0]DIRHOLD
 setp   [HMOT](CARD0).stepgen.00.steplen         [JOINT_0]STEPLEN
@@ -141,7 +157,7 @@ setp   pid.y.error-previous-target true
 setp   pid.y.maxerror 0.250000
 
 net y-index-enable  <=> pid.y.index-enable
-net y-enable        =>  pid.y.enable
+#net y-enable        =>  pid.y.enable
 net y-pos-cmd       =>  pid.y.command
 net y-pos-fb        =>  pid.y.feedback
 net y-output        <=  pid.y.output
@@ -166,7 +182,7 @@ net y-output     => [HMOT](CARD0).stepgen.01.velocity-cmd
 #net y-pos-fb     <= [HMOT](CARD0).stepgen.01.position-fb
 net y-pos-fb     => joint.1.motor-pos-fb
 net y-enable     <= joint.1.amp-enable-out
-net y-enable     => [HMOT](CARD0).stepgen.01.enable
+#net y-enable     => [HMOT](CARD0).stepgen.01.enable
 
 # ---setup home / limit switch signals---
 
@@ -219,7 +235,7 @@ net z-output     => [HMOT](CARD0).stepgen.02.velocity-cmd
 #net z-pos-fb     <= [HMOT](CARD0).stepgen.02.position-fb
 net z-pos-fb     => joint.2.motor-pos-fb
 net z-enable     <= joint.2.amp-enable-out
-net z-enable     => [HMOT](CARD0).stepgen.02.enable
+#net z-enable     => [HMOT](CARD0).stepgen.02.enable
 
 # ---setup home / limit switch signals---
 
@@ -303,9 +319,9 @@ net jog-selected-neg      halui.axis.selected.minus
 net spindle-manual-cw     halui.spindle.0.forward
 net spindle-manual-ccw    halui.spindle.0.reverse
 net spindle-manual-stop   halui.spindle.0.stop
-net machine-is-on         halui.machine.is-on  xy-drive-enable z-drive-enable
+#net machine-is-on         halui.machine.is-on  xy-drive-enable z-drive-enable
 #net jog-speed             halui.axis.jog-speed
-net MDI-mode              halui.mode.is-mdi
+#net MDI-mode              halui.mode.is-mdi
 
 #  ---coolant signals---
 
