@@ -9,16 +9,17 @@ loadrt hostmot2
 loadrt hm2_rpspi config="num_encoders=6 num_pwmgens=1 num_stepgens=5 sserial_port_0=2" 
 setp    [HMOT](CARD0).watchdog.timeout_ns 50000000
 loadrt pid names=pid.x,pid.y,pid.z,pid.s
-loadusr halshow
+# loadusr halshow
 # loadusr -W hal_input -n 8Bitdo SN30 Pro
 
 # PIN ALIASES - GIVE THEM MNEMONIC NAMES
 alias pin [HMOT](CARD0).ssr.00.out-03 spindle-fan
 alias pin [HMOT](CARD0).ssr.00.out-04 oiler
-alias pin hm2_7c80.0.inmux.00.input-10 xhlfb
-alias pin hm2_7c80.0.inmux.00.input-11 yhlfb
-alias pin hm2_7c80.0.inmux.00.input-12 zhlfb
-alias pin hm2_7c80.0.inmux.00.input-13-not probe
+alias pin hm2_7c80.0.inmux.00.input-00 xhlfb
+alias pin hm2_7c80.0.inmux.00.input-01 yhlfb
+alias pin hm2_7c80.0.inmux.00.input-02 zhlfb
+alias pin hm2_7c80.0.inmux.00.input-03-not probe
+alias pin hm2_7c80.0.inmux.00.input-05-not toolsetter
 alias pin [HMOT](CARD0).ssr.00.out-00 xy-drive-enable
 alias pin [HMOT](CARD0).ssr.00.out-05 z-drive-enable
 
@@ -30,6 +31,10 @@ net z-pos-fb [HMOT](CARD0).encoder.02.position
 setp    [HMOT](CARD0).encoder.00.scale [JOINT_0]ENCODER_SCALE
 setp    [HMOT](CARD0).encoder.01.scale [JOINT_1]ENCODER_SCALE
 setp    [HMOT](CARD0).encoder.02.scale [JOINT_2]ENCODER_SCALE
+
+# Mist coolant (Yes, the names are inconsistent. My net names reflect the actual function. Builtin names are being repurposed)
+net cool-air  iocontrol.0.coolant-mist [HMOT](CARD0).ssr.00.out-06
+net cool-mist iocontrol.0.coolant-flood [HMOT](CARD0).ssr.00.out-07
 
 
 
@@ -308,14 +313,14 @@ net machine-is-on         halui.machine.is-on  xy-drive-enable z-drive-enable
 #net jog-speed             halui.axis.jog-speed
 net MDI-mode              halui.mode.is-mdi
 
-#  ---coolant signals---
-
-net coolant-mist      <=  iocontrol.0.coolant-mist
-net coolant-flood     <=  iocontrol.0.coolant-flood
-
 #  ---probe signal---
 
-net probe-in     =>  motion.probe-input
+loadrt or2 names=probeor
+addf probeor servo-thread
+net probeorin0 probeor.in0 probe 
+net probeorin1 probeor.in1 toolsetter
+net probe-in     <=  probeor.out motion.probe-input 
+
 
 #  ---motion control signals---
 
