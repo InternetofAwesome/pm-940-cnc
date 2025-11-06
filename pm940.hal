@@ -4,7 +4,7 @@
 # overwritten when you run PNCconf again
 
 loadrt [KINS]KINEMATICS
-loadrt [EMCMOT]EMCMOT servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS
+loadrt [EMCMOT]EMCMOT servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS num_dio=6 num_aio=3
 loadrt hostmot2
 loadrt hm2_rpspi config="num_encoders=6 num_pwmgens=1 num_stepgens=5 sserial_port_0=2" 
 setp    [HMOT](CARD0).watchdog.timeout_ns 50000000
@@ -35,18 +35,6 @@ setp    [HMOT](CARD0).encoder.02.scale [JOINT_2]ENCODER_SCALE
 # Mist coolant (Yes, the names are inconsistent. My net names reflect the actual function. Builtin names are being repurposed)
 net cool-air  iocontrol.0.coolant-mist [HMOT](CARD0).ssr.00.out-06
 net cool-mist iocontrol.0.coolant-flood [HMOT](CARD0).ssr.00.out-07
-
-
-
-# to enable manual tool changes
-loadusr -W hal_manualtoolchange
-#setp iocontrol.0.tool-prepare => iocontrol.0.tool-prepared
-#setp iocontrol.0.tool-change => iocontrol.0.tool-changed
-net tool-change iocontrol.0.tool-change => hal_manualtoolchange.change
-net tool-changed iocontrol.0.tool-changed <= hal_manualtoolchange.changed
-net tool-number iocontrol.0.tool-prep-number => hal_manualtoolchange.number
-net tool-prepare-loopback iocontrol.0.tool-prepare => iocontrol.0.tool-prepared
-# end manual tool change
 
 
 addf [HMOT](CARD0).read          servo-thread
@@ -333,12 +321,6 @@ net machine-is-enabled        <=  motion.motion-enabled
 
 net estop-out     <=  iocontrol.0.user-enable-out
 net estop-out     =>  iocontrol.0.emc-enable-in
-
-#  ---manual tool change signals---
-
-#net tool-change-request    <= iocontrol.0.tool-change
-#net tool-change-confirmed  => iocontrol.0.tool-changed
-#net tool-number            <= iocontrol.0.tool-prep-number
 
 #  ---ignore tool prepare requests---
 net tool-prepare-loopback   iocontrol.0.tool-prepare      =>  iocontrol.0.tool-prepared

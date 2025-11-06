@@ -1,6 +1,8 @@
-T0 P0 X0.0 Y0.0 Z0.0 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D0.0 I0.0 J0.0 Q0.0 ;Tool #  Pocket #   X offset   Y offset   Z offset   A offset   B offset   C offset   U offset   V offset   W offset   Diameter   Front Angle   Back Angle   Orientation   Remark 
-T0 P0 X0.0 Y0.0 Z0.0 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D0.0 I0.0 J0.0 Q0.0 ; 
-T0 P0 X0.0 Y0.0 Z0.0 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D0.0 I0.0 J0.0 Q0.0 ;(no data allowed after this opening semicolon) 
-T21 P17 X0.0 Y0.0 Z0.0 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D0.328 I0.0 J0.0 Q0.0 ;21/64" End Mill 
-T1 P5 X0.0 Y0.0 Z0.0 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D0.328 I0.0 J0.0 Q0.0 ;21/64" End Mill 
-T3 P21 X0.0 Y0.0 Z-5.678 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D0.5 I0.0 J0.0 Q0.0 ;0.500" End Mill 
+T1   P0   D+0.328000 Z+13.439370 Q1 ; 21/64" End Mill
+T2   P0   Q1 ; New Tool
+T3   P3   D+0.500000 ; 0.500" End Mill
+T6   P0   Z-15.513400 Q1 ; New Tool
+T19  P0   Z-12.557300 Q1 ; New Tool
+T23  P0   Q1 ; New Tool
+T26  P0   Q1 ; New Tool
+T99  P99  D+0.157500 Z+11.669882 Q1 ; TOUCH PROBE
