@@ -3,6 +3,7 @@ windows:
   mainwindow:
     kwargs:
       confirm_exit: false
+      fullscreen: true
 
 data_plugins:
   tooltable:
