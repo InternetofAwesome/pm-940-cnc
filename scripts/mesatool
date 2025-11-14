@@ -1,5 +1,0 @@
-#!/bin/env bash
-
-if ! mesaflash --device 7c80 --addr /dev/spidev0.0 --spi "$@"; then
-	echo "Are you sure you remembered to close LinuxCNC?"
-fi

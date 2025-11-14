@@ -27,7 +27,7 @@ alias pin [HMOT](CARD0).ssr.00.out-05 z-drive-enable
 #joint.2.motor-pos-fb
 net x-pos-fb [HMOT](CARD0).encoder.00.position
 net y-pos-fb [HMOT](CARD0).encoder.01.position
-net z-pos-fb [HMOT](CARD0).encoder.02.position
+#net z-pos-fb [HMOT](CARD0).encoder.02.position
 setp    [HMOT](CARD0).encoder.00.scale [JOINT_0]ENCODER_SCALE
 setp    [HMOT](CARD0).encoder.01.scale [JOINT_1]ENCODER_SCALE
 setp    [HMOT](CARD0).encoder.02.scale [JOINT_2]ENCODER_SCALE
@@ -81,12 +81,6 @@ setp   pid.x.error-previous-target true
 # feedback sample time jitter.
 setp   pid.x.maxerror 0.2500
 
-net x-index-enable  <=> pid.x.index-enable
-net x-enable        =>  pid.x.enable
-net x-pos-cmd       =>  pid.x.command
-net x-pos-fb        =>  pid.x.feedback
-net x-output        <=  pid.x.output
-
 # Step Gen signals/setup
 
 setp   [HMOT](CARD0).stepgen.00.enable          true
@@ -102,12 +96,10 @@ setp   [HMOT](CARD0).stepgen.00.maxvel           [JOINT_0]STEPGEN_MAXVEL
 
 # ---closedloop stepper signals---
 
-net x-pos-cmd    <= joint.0.motor-pos-cmd
-net x-vel-cmd    <= joint.0.vel-cmd
-net x-output     => [HMOT](CARD0).stepgen.00.velocity-cmd
-#net x-pos-fb     <= [HMOT](CARD0).stepgen.00.position-fb
-net x-pos-fb     => joint.0.motor-pos-fb
-net x-enable     <= joint.0.amp-enable-out
+net x-pos-cmd    joint.0.motor-pos-cmd pid.x.command
+net x-output     pid.x.output [HMOT](CARD0).stepgen.00.velocity-cmd
+net x-pos-fb     [HMOT](CARD0).encoder.00.position pid.x.feedback joint.0.motor-pos-fb 
+net x-enable     joint.0.amp-enable-out pid.x.enable [HMOT](CARD0).stepgen.00.enable
 
 # ---setup home / limit switch signals---
 
@@ -134,12 +126,6 @@ setp   pid.y.error-previous-target true
 # feedback sample time jitter.
 setp   pid.y.maxerror 0.250000
 
-net y-index-enable  <=> pid.y.index-enable
-net y-enable        =>  pid.y.enable
-net y-pos-cmd       =>  pid.y.command
-net y-pos-fb        =>  pid.y.feedback
-net y-output        <=  pid.y.output
-
 # Step Gen signals/setup
 
 setp   [HMOT](CARD0).stepgen.01.dirsetup        [JOINT_1]DIRSETUP
@@ -154,13 +140,10 @@ setp   [HMOT](CARD0).stepgen.01.maxvel           [JOINT_1]STEPGEN_MAXVEL
 
 # ---closedloop stepper signals---
 
-net y-pos-cmd    <= joint.1.motor-pos-cmd
-net y-vel-cmd    <= joint.1.vel-cmd
-net y-output     => [HMOT](CARD0).stepgen.01.velocity-cmd
-#net y-pos-fb     <= [HMOT](CARD0).stepgen.01.position-fb
-net y-pos-fb     => joint.1.motor-pos-fb
-net y-enable     <= joint.1.amp-enable-out
-net y-enable     => [HMOT](CARD0).stepgen.01.enable
+net y-pos-cmd    joint.1.motor-pos-cmd pid.y.command
+net y-output     pid.y.output [HMOT](CARD0).stepgen.01.velocity-cmd
+net y-pos-fb     [HMOT](CARD0).encoder.01.position pid.y.feedback joint.1.motor-pos-fb 
+net y-enable     joint.1.amp-enable-out pid.y.enable [HMOT](CARD0).stepgen.01.enable
 
 # ---setup home / limit switch signals---
 
@@ -187,12 +170,6 @@ setp   pid.z.error-previous-target true
 # feedback sample time jitter.
 setp   pid.z.maxerror 0.2500
 
-net z-index-enable  <=> pid.z.index-enable
-net z-enable        =>  pid.z.enable
-net z-pos-cmd       =>  pid.z.command
-net z-pos-fb        =>  pid.z.feedback
-net z-output        <=  pid.z.output
-
 # Step Gen signals/setup
 
 setp   [HMOT](CARD0).stepgen.02.dirsetup        [JOINT_2]DIRSETUP
@@ -201,19 +178,17 @@ setp   [HMOT](CARD0).stepgen.02.steplen         [JOINT_2]STEPLEN
 setp   [HMOT](CARD0).stepgen.02.stepspace       [JOINT_2]STEPSPACE
 setp   [HMOT](CARD0).stepgen.02.position-scale  [JOINT_2]STEP_SCALE
 setp   [HMOT](CARD0).stepgen.02.step_type        0
+# control-type - Switches between position control mode (0) and velocity control mode (1). Defaults to position control (0).
 setp   [HMOT](CARD0).stepgen.02.control-type     1
 setp   [HMOT](CARD0).stepgen.02.maxaccel         [JOINT_2]STEPGEN_MAXACCEL
 setp   [HMOT](CARD0).stepgen.02.maxvel           [JOINT_2]STEPGEN_MAXVEL
 
 # ---closedloop stepper signals---
 
-net z-pos-cmd    <= joint.2.motor-pos-cmd
-net z-vel-cmd    <= joint.2.vel-cmd
-net z-output     => [HMOT](CARD0).stepgen.02.velocity-cmd
-#net z-pos-fb     <= [HMOT](CARD0).stepgen.02.position-fb
-net z-pos-fb     => joint.2.motor-pos-fb
-net z-enable     <= joint.2.amp-enable-out
-net z-enable     => [HMOT](CARD0).stepgen.02.enable
+net z-pos-cmd    joint.2.motor-pos-cmd pid.z.command
+net z-output     pid.z.output [HMOT](CARD0).stepgen.02.velocity-cmd
+net z-pos-fb     [HMOT](CARD0).encoder.02.position pid.z.feedback joint.2.motor-pos-fb 
+net z-enable     joint.2.amp-enable-out pid.z.enable [HMOT](CARD0).stepgen.02.enable
 
 # ---setup home / limit switch signals---
 
@@ -325,3 +300,6 @@ net estop-out     =>  iocontrol.0.emc-enable-in
 #  ---ignore tool prepare requests---
 net tool-prepare-loopback   iocontrol.0.tool-prepare      =>  iocontrol.0.tool-prepared
 
+# Hardware E-stop
+net estophw halui.estop.activate <= [HMOT](CARD0).inmux.00.input-10
+net estophwrst halui.estop.reset <= [HMOT](CARD0).inmux.00.input-10-not

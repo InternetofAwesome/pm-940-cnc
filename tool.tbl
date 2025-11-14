@@ -1,8 +1,0 @@
-T1   P0   D+0.328000 Z+13.439370 Q1 ; 21/64" End Mill
-T2   P0   Q1 ; New Tool
-T3   P3   D+0.500000 ; 0.500" End Mill
-T6   P0   Z-15.513400 Q1 ; New Tool
-T19  P0   Z-12.557300 Q1 ; New Tool
-T23  P0   Q1 ; New Tool
-T26  P0   Q1 ; New Tool
-T99  P99  D+0.157500 Z+11.669882 Q1 ; TOUCH PROBE
