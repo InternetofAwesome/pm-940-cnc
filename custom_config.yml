@@ -14,7 +14,7 @@ data_plugins:
   offsettable:
     provider: qtpyvcp.plugins.offset_table:OffsetTable
     kwargs:
-      columns: "XYZACR"
+      columns: "XYZ"
 
 settings:
 
