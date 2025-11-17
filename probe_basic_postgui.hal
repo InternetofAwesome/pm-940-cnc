@@ -23,3 +23,7 @@ net probe-in  <=  qtpyvcp.probe-led.on
 
 # *** Set line below for actual spindle readout from your hal file ***
 #net spindle-rpm-filtered scale_to_rpm.out  =>  qtpyvcp.spindle-encoder-rpm.in
+
+# Hardware E-stop
+net estophw halui.estop.activate <= [HMOT](CARD0).inmux.00.input-10
+net estophwrst halui.estop.reset <= [HMOT](CARD0).inmux.00.input-10-not

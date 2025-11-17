@@ -302,7 +302,3 @@ net estop-out     =>  iocontrol.0.emc-enable-in
 
 #  ---ignore tool prepare requests---
 net tool-prepare-loopback   iocontrol.0.tool-prepare      =>  iocontrol.0.tool-prepared
-
-# Hardware E-stop
-net estophw halui.estop.activate <= [HMOT](CARD0).inmux.00.input-10
-net estophwrst halui.estop.reset <= [HMOT](CARD0).inmux.00.input-10-not
