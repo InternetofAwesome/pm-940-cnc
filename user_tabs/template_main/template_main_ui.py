@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/buildbot/workdir/probe_basic-pi4/sources/debian/python3-probe-basic/usr/share/configs/machine_setup_files/user_tabs/template_main/template_main.ui'
+# Form implementation generated from reading ui file '/home/buildbot/workdir/probe_basic-pi4/sources/debian/python3-probe-basic/usr/share/configs/probe_basic/user_tabs/template_main/template_main.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
