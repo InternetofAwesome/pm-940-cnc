@@ -31,6 +31,9 @@ net y-pos-fb [HMOT](CARD0).encoder.01.position
 setp    [HMOT](CARD0).encoder.00.scale [JOINT_0]ENCODER_SCALE
 setp    [HMOT](CARD0).encoder.01.scale [JOINT_1]ENCODER_SCALE
 setp    [HMOT](CARD0).encoder.02.scale [JOINT_2]ENCODER_SCALE
+setp    [HMOT](CARD0).encoder.00.index-enable true
+setp    [HMOT](CARD0).encoder.01.index-enable true
+setp    [HMOT](CARD0).encoder.02.index-enable true
 
 # Mist coolant (Yes, the names are inconsistent. My net names reflect the actual function. Builtin names are being repurposed)
 net cool-air  iocontrol.0.coolant-mist [HMOT](CARD0).ssr.00.out-06
