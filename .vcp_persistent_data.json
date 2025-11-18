@@ -1,0 +1,61 @@
+{
+    "app.openFileDialog.sidebarUrls": [
+        "file:",
+        "file:///home/cnc",
+        "file:///mnt/nc"
+    ],
+    "app.openFileDialog.viewMode": 0,
+    "messages": [
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "E-Stop",
+            "timestamp": 1763438175.8933113
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "E-Stop",
+            "timestamp": 1763438324.2673366
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "E-Stop",
+            "timestamp": 1763438500.0995557
+        }
+    ],
+    "settings": {
+        "probe-parameters.calibration-offset": 0.001633,
+        "probe-parameters.extra-probe-depth": 0.1,
+        "probe-parameters.max-xy-distance": 1.0,
+        "probe-parameters.max-z-distance": 1.0,
+        "probe-parameters.probe-fast-fr": 25.0,
+        "probe-parameters.probe-slow-fr": 5.0,
+        "probe-parameters.probe-tool-number": 99.0,
+        "probe-parameters.probe-traverse-fr": 100.0,
+        "probe-parameters.step-off-width": 0.25,
+        "probe-parameters.xy-clearance": 0.25,
+        "probe-parameters.z-clearance": 0.1,
+        "tool-setter-probe.fast-probe-fr": 35.0,
+        "tool-setter-probe.retract-distance": 0.1,
+        "tool-setter-probe.slow-probe-fr": 5.0,
+        "tool-setter-probe.spindle-nose-height": 16.0,
+        "tool-setter-probe.traverse-fr": 100.0,
+        "tool-setter-probe.xy-max-travel": 1.0,
+        "tool-setter-probe.z-max-travel": 20.0
+    },
+    "tool-in-spindle": 0
+}

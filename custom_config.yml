@@ -16,6 +16,13 @@ data_plugins:
     kwargs:
       columns: "XYZ"
 
+  persistent_data_manager:
+    provider: qtpyvcp.plugins.persistent_data_manager:PersistentDataManager
+    kwargs:
+      # serialization method to use: json or pickle
+      serialization_method: json
+      # persistence_file: .vcp_data.json
+
 settings:
 
   # VTK backplot view settings
