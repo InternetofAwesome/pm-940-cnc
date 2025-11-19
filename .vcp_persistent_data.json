@@ -35,6 +35,156 @@
             "task_mode": "Manual",
             "task_state": "E-Stop",
             "timestamp": 1763438500.0995557
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "E-Stop",
+            "timestamp": 1763494764.5558782
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763494846.4300303
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763495242.7921176
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763495522.6040132
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "E-Stop",
+            "timestamp": 1763496022.5079741
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763496358.171087
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763496544.0358093
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "E-Stop",
+            "timestamp": 1763496641.7038043
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763496681.5976076
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763497073.006236
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763497118.5490751
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763497464.5438359
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763497861.2583025
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763499470.339104
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763500195.7537305
         }
     ],
     "settings": {
