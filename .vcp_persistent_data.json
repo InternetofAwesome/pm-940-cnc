@@ -215,11 +215,151 @@
             "task_mode": "MDI",
             "task_state": "On",
             "timestamp": 1763543791.8249667
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe tripped during homing motion. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763544051.5054922
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe tripped during homing motion. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763544053.2880967
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 2 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763544573.7014518
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545364.25811
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Exceeded POSITIVE soft limit (0.00000) \n on joint 2",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545646.4390855
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Joint must be unhomed, jogged \n into limits, rehomed",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545647.0118673
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Note: Motion enabled after reaching \n a coordinate soft limit with \n active external offsets",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545647.764763
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Note: Motion enabled after reaching \n a coordinate soft limit with \n active external offsets",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545659.1487353
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Note: Motion enabled after reaching \n a coordinate soft limit with \n active external offsets",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545675.8184075
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Note: Motion enabled after reaching \n a coordinate soft limit with \n active external offsets",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545714.7620106
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545801.583384
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "command (EMC_JOG_STOP) cannot be executed \n until the machine is out \n of E-stop and turned on \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545802.0349622
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Exceeded POSITIVE soft limit (0.00000) \n on joint 2",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545802.118124
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Joint must be unhomed, jogged \n into limits, rehomed",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545802.2882187
         }
     ],
     "settings": {
-        "machine.jog.angular-speed": 216.0,
-        "machine.jog.linear-speed": 12.0,
+        "machine.jog.angular-speed": 648.0,
+        "machine.jog.linear-speed": 36.0,
         "probe-parameters.calibration-offset": 0.001633,
         "probe-parameters.diameter-hint": 1.6,
         "probe-parameters.extra-probe-depth": 0.1,
@@ -244,5 +384,5 @@
         "tool-setter-probe.z-max-travel": 20.0,
         "virtual-input.enable": true
     },
-    "tool-in-spindle": 99
+    "tool-in-spindle": 0
 }
