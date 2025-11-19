@@ -35,10 +35,333 @@
             "task_mode": "Manual",
             "task_state": "E-Stop",
             "timestamp": 1763438500.0995557
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "E-Stop",
+            "timestamp": 1763494764.5558782
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763494846.4300303
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763495242.7921176
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763495522.6040132
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "E-Stop",
+            "timestamp": 1763496022.5079741
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763496358.171087
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763496544.0358093
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "E-Stop",
+            "timestamp": 1763496641.7038043
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763496681.5976076
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763497073.006236
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763497118.5490751
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763497464.5438359
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763497861.2583025
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763499470.339104
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763500195.7537305
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763502270.9035125
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763541640.319577
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763543791.8249667
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe tripped during homing motion. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763544051.5054922
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe tripped during homing motion. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763544053.2880967
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 2 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763544573.7014518
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545364.25811
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Exceeded POSITIVE soft limit (0.00000) \n on joint 2",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545646.4390855
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Joint must be unhomed, jogged \n into limits, rehomed",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545647.0118673
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Note: Motion enabled after reaching \n a coordinate soft limit with \n active external offsets",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545647.764763
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Note: Motion enabled after reaching \n a coordinate soft limit with \n active external offsets",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545659.1487353
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Note: Motion enabled after reaching \n a coordinate soft limit with \n active external offsets",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545675.8184075
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Note: Motion enabled after reaching \n a coordinate soft limit with \n active external offsets",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763545714.7620106
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545801.583384
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "command (EMC_JOG_STOP) cannot be executed \n until the machine is out \n of E-stop and turned on \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545802.0349622
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Exceeded POSITIVE soft limit (0.00000) \n on joint 2",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545802.118124
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Joint must be unhomed, jogged \n into limits, rehomed",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763545802.2882187
         }
     ],
     "settings": {
+        "machine.jog.angular-speed": 648.0,
+        "machine.jog.linear-speed": 36.0,
         "probe-parameters.calibration-offset": 0.001633,
+        "probe-parameters.diameter-hint": 1.6,
         "probe-parameters.extra-probe-depth": 0.1,
         "probe-parameters.max-xy-distance": 1.0,
         "probe-parameters.max-z-distance": 1.0,
@@ -49,13 +372,17 @@
         "probe-parameters.step-off-width": 0.25,
         "probe-parameters.xy-clearance": 0.25,
         "probe-parameters.z-clearance": 0.1,
+        "tool-change-position.x-tool-change-position": 10.850256,
+        "tool-change-position.y-tool-change-position": 3.099409,
+        "tool-change-position.z-tool-change-position": -14.825394,
         "tool-setter-probe.fast-probe-fr": 35.0,
         "tool-setter-probe.retract-distance": 0.1,
         "tool-setter-probe.slow-probe-fr": 5.0,
         "tool-setter-probe.spindle-nose-height": 16.0,
         "tool-setter-probe.traverse-fr": 100.0,
         "tool-setter-probe.xy-max-travel": 1.0,
-        "tool-setter-probe.z-max-travel": 20.0
+        "tool-setter-probe.z-max-travel": 20.0,
+        "virtual-input.enable": true
     },
     "tool-in-spindle": 0
 }
