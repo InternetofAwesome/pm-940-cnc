@@ -1,6 +1,8 @@
-T1   P0   D+0.250000 Z+6.534567 ; 0.25" ball nose
-T2   P0   D+2.500000 Z+1.487992 ; superfly
-T3   P0   D+0.500000 Z+5.937520 ; 0.5" x 1" 2f EM
-T19  P0   D+0.171800 Z+8.547165 ; drill chuck
-T99  P0   D+0.157400 Z+7.776496 ; touch probe
-T100 P0   Z+2.642126 ; dummy
+;Tool  Pocket Z Offset     Diameter     Remark
+T1     P0     Z+3.527087   D+0.250000   ; 0.25" ball nose
+T2     P0     Z+1.487992   D+2.500000   ; superfly
+T3     P0     Z+2.929646   D+0.500000   ; 0.5" x 1" 2f EM
+T6     P0     Z+3.070827   D+0.000000   ; 1/2" Countersink
+T19    P0     Z+6.853307   D+0.171800   ; drill chuck
+T99    P0     Z+4.769016   D+0.157400   ; touch probe
+T100   P0     Z+2.642126   D+0.000000   ; dummy

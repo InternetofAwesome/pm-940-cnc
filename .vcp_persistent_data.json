@@ -4,12 +4,604 @@
         "file:///home/cnc",
         "file:///mnt/nc"
     ],
-    "app.openFileDialog.viewMode": 0,    
+    "app.openFileDialog.viewMode": 0,
+    "messages": [
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763594231.681547
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763594231.9173412
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763594245.3446498
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763594246.2440639
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763594253.936817
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763594254.687829
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763594288.6178977
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763594289.3774738
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763594349.7998068
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763594350.0043766
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763594418.980892
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 57 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763594419.7243803
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763594792.3388112
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Linear move on line 273 \n would exceed joint 2's positive \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763596627.7459767
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763596628.3619237
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763597502.6103342
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Probe tripped during non-probe move. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763597545.81079
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Probe tripped during non-probe move. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763597546.661293
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763597561.6855474
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763597564.7576783
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/pip1.txt",
+            "message_text": "Linear move on line 11 \n would exceed joint 2's positive \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763599273.6260061
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/pip1.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763599274.3257163
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/pip3.set",
+            "message_text": "File ended with no percent \n sign (%) or program end \n (M2)",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763599586.5907378
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/pip3.set",
+            "message_text": "File ended with no percent \n sign (%) or program end \n (M2)",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763599595.1196187
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/pip4.txt",
+            "message_text": "joint 2 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "Reset",
+            "timestamp": 1763601426.674508
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 2 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763661609.1454916
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763663812.0923011
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763665488.5191188
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763674621.0207028
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Probe move on line 57 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763675226.7465148
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Probe move on line 57 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763675227.2925227
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763675344.3239481
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - top side.txt",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763678160.6408916
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/die (ie, dice) - bottom side.txt",
+            "message_text": "Probe tripped during non-probe move. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763678702.2894237
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/die (ie, dice) - bottom side.txt",
+            "message_text": "Probe tripped during non-probe move. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763678702.860479
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/pip4.txt",
+            "message_text": "joint 2 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763682677.7752955
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/axle.txt",
+            "message_text": "G38.2 move finished without making \n contact.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763755190.0332146
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/axle.txt",
+            "message_text": "Probe move on line 57 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763755238.1027951
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/axle.txt",
+            "message_text": "Probe move on line 57 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763755238.8694057
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763755904.4615998
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "P value out of range \n with G10 L1",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1763756828.2486353
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763756862.419743
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763756904.756974
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763756907.9043276
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763756911.915985
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/axle^roller way covers.txt",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763765995.0173655
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/axle^roller way covers.txt",
+            "message_text": "joint 2 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763766743.7453492
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/axle^roller way covers.txt",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763767035.045226
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/axle^roller way covers.txt",
+            "message_text": "command (EMC_TASK_PLAN_EXECUTE) cannot be executed \n until the machine is out \n of E-stop and turned on \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "E-Stop",
+            "timestamp": 1763768206.0324507
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/axle^roller way covers.txt",
+            "message_text": "Unknown word where unary operation \n could be",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763768221.0651243
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/axle^roller way covers.txt",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763768980.0309243
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/axle^roller way covers.txt",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763769281.029811
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/spindle zero.ngc",
+            "message_text": "joint 2 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763773826.584502
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/spindle zero.ngc",
+            "message_text": "Probe tripped during non-probe move. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763774022.38579
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/spindle zero.ngc",
+            "message_text": "joint 2 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1763774737.9909034
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763778136.742707
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 50000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763778755.465773
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1763793624.4181464
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 2 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1763957671.7924635
+        }
+    ],
     "settings": {
-        "machine.jog.angular-speed": 0.0,
-        "machine.jog.linear-speed": 0.0,
+        "machine.jog.angular-speed": 7884.0,
+        "machine.jog.linear-speed": 72.9708,
         "probe-parameters.calibration-offset": 0.001633,
-        "probe-parameters.diameter-hint": 1.6,
+        "probe-parameters.diameter-hint": 0.375,
         "probe-parameters.extra-probe-depth": 0.1,
         "probe-parameters.max-xy-distance": 1.0,
         "probe-parameters.max-z-distance": 1.0,
@@ -18,19 +610,19 @@
         "probe-parameters.probe-tool-number": 99.0,
         "probe-parameters.probe-traverse-fr": 100.0,
         "probe-parameters.step-off-width": 0.25,
-        "probe-parameters.x-hint-boss-pocket": 1.0,
+        "probe-parameters.x-hint-boss-pocket": 0.81,
         "probe-parameters.xy-clearance": 0.25,
-        "probe-parameters.y-hint-boss-pocket": 0.75,
+        "probe-parameters.y-hint-boss-pocket": 0.77,
         "probe-parameters.z-clearance": 0.1,
         "tool-change-position.x-tool-change-position": 10.852224,
         "tool-change-position.y-tool-change-position": 3.099114,
         "tool-setter-probe.fast-probe-fr": 35.0,
         "tool-setter-probe.retract-distance": 0.1,
         "tool-setter-probe.slow-probe-fr": 5.0,
-        "tool-setter-probe.spindle-nose-height": 19.5,
+        "tool-setter-probe.spindle-nose-height": 16.5,
         "tool-setter-probe.traverse-fr": 100.0,
         "tool-setter-probe.xy-max-travel": 1.0,
-        "tool-setter-probe.z-max-travel": 19.0,
+        "tool-setter-probe.z-max-travel": 16.5,
         "virtual-input.enable": true
     },
     "tool-in-spindle": 0
