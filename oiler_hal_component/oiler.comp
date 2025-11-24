@@ -1,0 +1,88 @@
+component oiler "Distance/time-based oiler with manual + post-home trigger";
+
+pin in float x_pos_in;
+pin in float y_pos_in;
+pin in float z_pos_in;
+
+pin in bit motion_active;
+pin in bit manual_trigger;
+pin in bit home_all_complete;
+
+pin out bit pump;
+
+param rw float dist_thresh = 0.5;   
+param rw float time_thresh = 600;   
+param rw float pump_time   = 3;     
+param rw float lockout     = 120;   
+
+variable float last_x = 0;
+variable float last_y = 0;
+variable float last_z = 0;
+
+variable float dist_accum = 0;
+variable float time_accum = 0;
+variable float pump_timer = 0;
+variable float lock_timer = 0;
+
+variable int home_shot_done = 0;
+
+function _;
+license "MIT";
+;;
+#include <math.h>
+
+FUNCTION(_) {
+
+    // ---- distance accumulation ----
+    dist_accum += fabs(x_pos_in - last_x)
+                + fabs(y_pos_in - last_y)
+                + fabs(z_pos_in - last_z);
+
+    last_x = x_pos_in;
+    last_y = y_pos_in;
+    last_z = z_pos_in;
+
+    // ---- time accumulation ----
+    if (motion_active && pump_timer <= 0 && lock_timer <= 0)
+        time_accum += 1.0 / period;
+
+    // ---- trigger conditions ----
+    int trigger = 0;
+
+    if (dist_accum >= dist_thresh || time_accum >= time_thresh)
+        trigger = 1;
+
+    if (manual_trigger)
+        trigger = 1;
+
+    if (home_all_complete && !home_shot_done) {
+        trigger = 1;
+        home_shot_done = 1;
+    }
+
+    // reset home_after flag if machine un-homed
+    if (!home_all_complete)
+        home_shot_done = 0;
+
+    // ---- pump control ----
+    if (pump_timer > 0) {
+        pump = 1;
+        pump_timer -= period;
+
+        if (pump_timer <= 0) {
+            pump = 0;
+            lock_timer = lockout;
+            dist_accum = 0;
+            time_accum = 0;
+        }
+
+    } else {
+        pump = 0;
+
+        if (lock_timer > 0)
+            lock_timer -= period;
+
+        if (lock_timer <= 0 && trigger)
+            pump_timer = pump_time;
+    }
+}

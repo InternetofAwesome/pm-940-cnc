@@ -1,0 +1,14 @@
+loadrt oiler
+
+addf oiler.0 servo-thread
+
+# feed encoder/position feedback
+net xpos    joint.0.motor-pos-fb  => oiler.0.x_pos_in
+net ypos    joint.1.motor-pos-fb  => oiler.0.y_pos_in
+net zpos    joint.2.motor-pos-fb  => oiler.0.z_pos_in
+
+# motion state
+net mactive motion.is-moving      => oiler.0.motion_active
+
+# pump output (to a relay/SSR/PLC pin)
+net oilerpump oiler.0.pump => hm2_7i85.0.gpio.00.out

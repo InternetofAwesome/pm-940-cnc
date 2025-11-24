@@ -9,6 +9,7 @@ loadrt hostmot2
 loadrt hm2_rpspi config="num_encoders=6 num_pwmgens=1 num_stepgens=5 sserial_port_0=2" 
 setp    [HMOT](CARD0).watchdog.timeout_ns 50000000
 loadrt pid names=pid.x,pid.y,pid.z,pid.s
+source oiler.hal
 # loadusr halshow
 # loadusr -W hal_input -n 8Bitdo SN30 Pro
 
