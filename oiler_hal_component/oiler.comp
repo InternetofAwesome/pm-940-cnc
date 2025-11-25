@@ -10,19 +10,19 @@ pin in bit home_all_complete;
 
 pin out bit pump;
 
-param rw float dist_thresh = 0.5;   
-param rw float time_thresh = 600;   
-param rw float pump_time   = 3;     
-param rw float lockout     = 120;   
+param rw float dist_thresh = 0.5;   // machine units
+param rw float time_thresh = 600;   // seconds
+param rw float pump_time   = 3;     // seconds
+param rw float lockout     = 120;   // seconds
 
 variable float last_x = 0;
 variable float last_y = 0;
 variable float last_z = 0;
 
-variable float dist_accum = 0;
-variable float time_accum = 0;
-variable float pump_timer = 0;
-variable float lock_timer = 0;
+param rw float dist_accum = 0;      // meters
+param rw float time_accum = 0;      // seconds
+param rw float pump_timer = 0;      // seconds
+param rw float lock_timer = 0;      // seconds
 
 variable int home_shot_done = 0;
 
@@ -42,9 +42,9 @@ FUNCTION(_) {
     last_y = y_pos_in;
     last_z = z_pos_in;
 
-    // ---- time accumulation ----
+    // ---- time accumulation (SECONDS) ----
     if (motion_active && pump_timer <= 0 && lock_timer <= 0)
-        time_accum += 1.0 / period;
+        time_accum += fperiod;
 
     // ---- trigger conditions ----
     int trigger = 0;
@@ -60,29 +60,39 @@ FUNCTION(_) {
         home_shot_done = 1;
     }
 
-    // reset home_after flag if machine un-homed
     if (!home_all_complete)
         home_shot_done = 0;
 
-    // ---- pump control ----
-    if (pump_timer > 0) {
-        pump = 1;
-        pump_timer -= period;
+    // ---- pump / lockout state machine ----
 
-        if (pump_timer <= 0) {
+    // 1) Pump running
+    if (pump_timer > 0.0)
+    {
+        pump = 1;
+        pump_timer -= fperiod;
+
+        if (pump_timer <= 0)
+        {
             pump = 0;
             lock_timer = lockout;
             dist_accum = 0;
             time_accum = 0;
         }
 
-    } else {
-        pump = 0;
-
-        if (lock_timer > 0)
-            lock_timer -= period;
-
-        if (lock_timer <= 0 && trigger)
-            pump_timer = pump_time;
+        return;   // important: don’t process lockout/trigger in same cycle
     }
+
+    // 2) Lockout active
+    if (lock_timer > 0)
+    {
+        pump = 0;
+        lock_timer -= fperiod;
+        return;   // still locked out
+    }
+
+    // 3) Idle & armed: handle trigger
+    pump = 0;
+
+    if (trigger)
+        pump_timer = pump_time;
 }

@@ -27,3 +27,34 @@ net probe-in  <=  qtpyvcp.probe-led.on
 # Hardware E-stop
 net estophw halui.estop.activate <= [HMOT](CARD0).inmux.00.input-10
 net estophwrst halui.estop.reset <= [HMOT](CARD0).inmux.00.input-10-not
+
+loadrt oiler
+addf oiler.0 servo-thread
+
+# feed encoder/position feedback
+net xpos    joint.0.pos-fb  => oiler.0.x-pos-in
+net ypos    joint.1.pos-fb  => oiler.0.y-pos-in
+net zpos    joint.2.pos-fb  => oiler.0.z-pos-in
+ 
+## motion state
+# sum absolute velocities into a single signal
+loadrt abs count=1
+loadrt comp count=1
+addf comp.0 servo-thread
+addf abs.0 servo-thread
+
+# run oiler every hour of motion
+setp oiler.0.time-thresh 3600
+# OR - Run oiler every 1000 inches
+setp oiler.0.dist-thresh 1000
+# When the oiler run, keep it on for 10s
+setp oiler.0.pump-time 10
+
+setp comp.0.in0 0.001
+net motion-speed motion.current-vel => abs.0.in 
+net motion-vel abs.0.out => comp.0.in1
+net machine-moving comp.0.out => oiler.0.motion-active
+# Plumb in a signal for when the machine is homed (this runs the oiler upon homing)
+net machine-homed motion.is-all-homed => oiler.0.home-all-complete
+# pump output (to a relay/SSR/PLC pin)
+net oilerpump oiler.0.pump => hm2_7c80.0.ssr.00.out-04
