@@ -14,7 +14,6 @@ loadrt pid names=pid.x,pid.y,pid.z,pid.s
 
 # PIN ALIASES - GIVE THEM MNEMONIC NAMES
 alias pin [HMOT](CARD0).ssr.00.out-03 spindle-fan
-alias pin [HMOT](CARD0).ssr.00.out-04 oiler
 alias pin hm2_7c80.0.inmux.00.input-00 xhlfb
 alias pin hm2_7c80.0.inmux.00.input-01 yhlfb
 alias pin hm2_7c80.0.inmux.00.input-02 zhlfb
