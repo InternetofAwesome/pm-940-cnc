@@ -35,8 +35,8 @@ net y-index    [HMOT](CARD0).encoder.01.index-enable joint.1.index-enable
 net z-index    [HMOT](CARD0).encoder.02.index-enable joint.2.index-enable
 
 # Mist coolant (Yes, the names are inconsistent. My net names reflect the actual function. Builtin names are being repurposed)
-net cool-air  iocontrol.0.coolant-mist [HMOT](CARD0).ssr.00.out-06
-net cool-mist iocontrol.0.coolant-flood [HMOT](CARD0).ssr.00.out-07
+# net cool-air  iocontrol.0.coolant-mist [HMOT](CARD0).ssr.00.out-06 [HMOT](CARD0).ssr.00.out-07
+net cool-mist iocontrol.0.coolant-flood [HMOT](CARD0).ssr.00.out-07 [HMOT](CARD0).ssr.00.out-06
 
 
 addf [HMOT](CARD0).read          servo-thread
