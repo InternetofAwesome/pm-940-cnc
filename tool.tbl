@@ -1,8 +1,12 @@
-;Tool  Pocket Z Offset     Diameter     Remark
-T1     P0     Z+3.527087   D+0.250000   ; 0.25" ball nose
-T2     P0     Z+1.487992   D+2.500000   ; superfly
-T3     P0     Z+2.929646   D+0.500000   ; 0.5" x 1" 2f EM
-T6     P0     Z+3.070827   D+0.000000   ; 1/2" Countersink
-T19    P0     Z+6.853307   D+0.171800   ; drill chuck
-T99    P0     Z+4.769016   D+0.157400   ; touch probe
-T100   P0     Z+2.642126   D+0.000000   ; dummy
+T1   P0   D+0.250000 Z+3.471073 ; 0.25" ball nose
+T2   P0   D+2.500000 Z+1.487992 ; superfly
+T3   P0   D+0.500000 Z+2.874420 ; 0.5" x 1" 2f EM
+T5   P0   D+0.328100 Z+3.487787 ; 21/64 - Onsrud 81-111
+T6   P0   Z+3.070827 ; 1/2" Countersink
+T7   P0   D+0.328100 Z+3.002176 ; 21/64 x 0.75 hss
+T11  P0   D+0.250000 Z+3.461034 ; 1/4 endmill
+T19  P0   D+0.171800 Z+5.621467 ; drill chuck
+T99  P0   D+0.157400 Z+4.711428 ; touch probe
+T100 P0   Z+2.642126 ; dummy
+T1000 P0   D+1.440000 Z+0.000435 ; spindle nose
+T9   P0   ; .25 endmill
