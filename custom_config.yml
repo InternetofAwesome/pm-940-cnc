@@ -23,6 +23,8 @@ data_plugins:
       serialization_method: json
       # persistence_file: .vcp_data.json
 
+machine_ext_scale: 1.0
+
 settings:
 
   # VTK backplot view settings
@@ -53,4 +55,7 @@ settings:
 
   backplot.multitool-colors:
     default_value: True
+
+  backplot.machine_ext_scale:
+    default_value: 1.0
 

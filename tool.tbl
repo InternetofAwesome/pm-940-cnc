@@ -4,9 +4,10 @@ T3   P0   D+0.500000 Z+2.874420 ; 0.5" x 1" 2f EM
 T5   P0   D+0.328100 Z+3.487787 ; 21/64 - Onsrud 81-111
 T6   P0   Z+3.070827 ; 1/2" Countersink
 T7   P0   D+0.328100 Z+3.002176 ; 21/64 x 0.75 hss
-T11  P0   D+0.250000 Z+3.461034 ; 1/4 endmill
+T9   P0   ; .25 endmill
+T11  P0   D+0.250000 Z+2.996027 ; 1/4 endmill
 T19  P0   D+0.171800 Z+5.621467 ; drill chuck
-T99  P0   D+0.157400 Z+4.711428 ; touch probe
+T99  P0   D+0.157400 Z+4.730082 ; touch probe
 T100 P0   Z+2.642126 ; dummy
 T1000 P0   D+1.440000 Z+0.000435 ; spindle nose
-T9   P0   ; .25 endmill
+T13  P0   D+0.500000 Z+5.121103 ; 1/2" x 2" 1FL EM HSS

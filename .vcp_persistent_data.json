@@ -1595,35 +1595,1366 @@
             "task_mode": "MDI",
             "task_state": "On",
             "timestamp": 1766168208.8290594
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "ERROR: Remove tool from spindle \n before running nose touch off! \n",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168422.6909013
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 1",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168435.5078974
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 2",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168435.8193405
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 3",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168435.9959903
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 4",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168436.1862595
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 5",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168436.37627
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 6",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168436.565856
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 7",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168436.7594693
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 8",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168436.9592302
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 9",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168437.1610856
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 10",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168437.366199
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 11",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168437.5592744
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 12",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168437.7651207
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "ERROR: Remove tool from spindle \n before running nose touch off! \n",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168443.4165404
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "ERROR: Tool in spindle is \n #<tool_in_spindle>",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168497.8591778
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "ERROR: Tool in spindle is \n [#<tool_in_spindle>]",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168699.0069003
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "ERROR: Tool in spindle is \n {#<tool_in_spindle>}",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168710.817515
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "ERROR: Tool in spindle is \n #<tool_in_spindle>",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168833.5061762
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "ERROR: Tool in spindle is \n #3991",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168897.3458395
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "G38.2 move finished without making \n contact.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766168994.162826
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Spindle nose height set to \n #<spindle_zero_height>",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766169055.104037
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766173210.451547
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe move on line 32 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1766186651.8923504
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe move on line 32 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766186652.228752
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe move on line 32 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766186674.446063
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe move on line 32 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766186674.5897043
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Named parameter #<traverse_fr> not defined \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766186791.6308722
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "G38.2 move finished without making \n contact.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766186843.2846458
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "G38.2 move finished without making \n contact.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766187061.182456
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "G38.2 move finished without making \n contact.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766187073.1036844
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "G38.2 move finished without making \n contact.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766187089.5028632
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "G38.2 move finished without making \n contact.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766187100.5787997
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe move on line 42 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766187182.7942758
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Probe move on line 42 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766187183.1062717
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Bad character ']' used",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766187482.6102734
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning circle.txt",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766188945.385095
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 6 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194627.9057689
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 6 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194628.125531
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194628.3441122
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 6 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194640.2767985
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 6 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194640.523524
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194640.7190099
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Cannot do g1 with zero \n feed rate",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194692.0805464
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 13 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766194701.956494
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 13 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194702.1145062
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194702.6898556
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 13 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194772.0884888
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 13 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766194772.8294604
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194772.880912
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Must use g0 or g1 \n with g53",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1766194823.8330522
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 13 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766194842.7185085
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 13 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1766194843.3707676
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1766194843.5455203
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 13 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1766194855.7073464
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 13 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1766194856.389344
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1766194856.4243195
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 6 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194869.1853542
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 6 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194869.9371676
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766194870.1443193
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Cannot do g1 with zero \n feed rate",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1766194949.7542286
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 6 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766195036.4104245
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "Linear move on line 6 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766195037.0555327
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning z.txt",
+            "message_text": "invalid params in linear command \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766195037.091712
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/tuning circle.txt",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1766197539.6749594
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1766198132.8313386
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "command (EMC_JOG_STOP) cannot be executed \n until the machine is out \n of E-stop and turned on \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766198133.1880083
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "command (EMC_JOG_CONT) cannot be executed \n until the machine is out \n of E-stop and turned on \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766198133.4068825
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 0 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766198143.4106128
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766198252.1016152
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766198955.7140467
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766199301.3409057
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766199708.5772474
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766200951.0241659
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766201092.8517249
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766201371.2359653
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1766203645.9904215
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1768182299.2372532
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1768182469.7486486
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1768430762.2319136
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1768430784.9952621
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1768430795.7994328
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1768430812.617196
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1768431774.7965863
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "command (EMC_JOG_STOP) cannot be executed \n until the machine is out \n of E-stop and turned on \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1768431775.2187533
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1768433101.3068728
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1768433193.8759873
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/home/cnc/nc/board_1.ngc",
+            "message_text": "Circular move on line 10 \n would exceed Z's negative limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1768433416.2411277
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/nc/board_1.ngc",
+            "message_text": "Circular move on line 10 \n would exceed joint 2's negative \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1768433417.1228058
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/nc/board_1.ngc",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1768433456.1941488
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/nc/board_1.ngc",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1768433456.6138496
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/nc/board_1.ngc",
+            "message_text": "command (EMC_JOG_STOP) cannot be executed \n until the machine is out \n of E-stop and turned on \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1768433457.1513565
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1770760343.8765702
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1770760462.2710073
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770760838.6341136
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "G38.2 move finished without making \n contact.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770760866.731643
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "G38.2 move finished without making \n contact.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770760900.5750842
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 46 \n would exceed Y's positive limit \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770760996.8923354
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "Probe move on line 46 \n would exceed joint 1's positive \n limit",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770760997.0267892
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 1",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770766594.8091717
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 2",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766595.5623186
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 3",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766595.7399683
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 4",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766595.9295938
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 5",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766596.1200862
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 6",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766596.3090034
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 7",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766596.4993846
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 8",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766596.6985571
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 9",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766596.8826606
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 10",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766597.112884
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 11",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766597.2767062
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/vise tram (x back and forth).nc",
+            "message_text": "the tool you are trying \n to load is already stored \n in carousel pocket 12",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770766597.4781125
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Probe is already tripped when \n starting G38.2 or G38.3 move \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770767460.848284
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Probe is already tripped when \n starting G38.2 or G38.3 move \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770767503.3598328
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Probe is already tripped when \n starting G38.2 or G38.3 move \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770767519.4873426
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Probe tripped during non-probe move. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770767539.5720546
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Probe tripped during non-probe move. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770767573.997182
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770767909.528199
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Probe is already tripped when \n starting G38.2 or G38.3 move \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1770767922.3167307
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770857415.336609
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Specified probe tool #<probe_tool_number> not \n in spindle, aborting",
+            "message_type": "info",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770862116.9714704
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Requested tool 15 not found \n in the tool table",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1770862589.9930427
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1771554055.8655117
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Probe tripped during a coordinate \n jog.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1771554081.6835773
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/haircut.txt",
+            "message_text": "Probe tripped during non-probe move. \n",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "MDI",
+            "task_state": "On",
+            "timestamp": 1771554549.1143184
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771620458.2178638
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771620515.8226788
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771620701.6048927
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "Reset",
+            "timestamp": 1771620899.3141708
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771621388.4219842
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771621703.5507538
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "No file loaded",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771624654.564149
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1771624664.9204044
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771624926.0722153
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771625098.183001
         }
     ],
     "settings": {
-        "machine.jog.angular-speed": 1080.0,
-        "machine.jog.linear-speed": 9.995999999999999,
+        "machine.jog.angular-speed": 9180.0,
+        "machine.jog.linear-speed": 84.96600000000001,
         "probe-parameters.calibration-offset": 0.001633,
-        "probe-parameters.diameter-hint": 0.375,
-        "probe-parameters.extra-probe-depth": 0.1,
-        "probe-parameters.max-xy-distance": 1.0,
+        "probe-parameters.diameter-hint": 0.25,
+        "probe-parameters.extra-probe-depth": -0.06,
+        "probe-parameters.max-xy-distance": 4.0,
         "probe-parameters.max-z-distance": 1.0,
         "probe-parameters.probe-fast-fr": 25.0,
         "probe-parameters.probe-slow-fr": 5.0,
         "probe-parameters.probe-tool-number": 99.0,
         "probe-parameters.probe-traverse-fr": 100.0,
         "probe-parameters.step-off-width": 0.5,
-        "probe-parameters.x-hint-boss-pocket": 1.25,
+        "probe-parameters.x-hint-boss-pocket": 6.0,
+        "probe-parameters.x-hint-ridge-valley": 3.0,
         "probe-parameters.xy-clearance": 0.1,
-        "probe-parameters.y-hint-boss-pocket": 0.77,
+        "probe-parameters.y-hint-boss-pocket": 3.0,
+        "probe-parameters.y-hint-ridge-valley": 3.0,
         "probe-parameters.z-clearance": 0.1,
         "tool-change-position.x-tool-change-position": 10.852224,
         "tool-change-position.y-tool-change-position": 3.099114,
         "tool-setter-probe.fast-probe-fr": 35.0,
         "tool-setter-probe.retract-distance": 0.1,
         "tool-setter-probe.slow-probe-fr": 5.0,
-        "tool-setter-probe.spindle-nose-height": 16.4619,
+        "tool-setter-probe.spindle-nose-height": 16.4402,
         "tool-setter-probe.traverse-fr": 100.0,
         "tool-setter-probe.xy-max-travel": 1.0,
-        "tool-setter-probe.z-max-travel": 16.5,
-        "virtual-input.enable": true
+        "tool-setter-probe.z-max-travel": 16.3926
     },
-    "tool-in-spindle": 0
+    "tool-in-spindle": 11
 }
