@@ -58,3 +58,13 @@ net machine-moving comp.0.out => oiler.0.motion-active
 net machine-homed motion.is-all-homed => oiler.0.home-all-complete
 # pump output (to a relay/SSR/PLC pin)
 net oilerpump oiler.0.pump => hm2_7c80.0.ssr.00.out-04
+
+# --- Gamepad controller shim ---
+# Starts even without controller; reconnects automatically
+loadusr -W game_controller.py
+
+# Left stick X → X axis, Left stick Y → Y axis, Right stick Y → Z axis
+# Jog outputs are gated by right trigger (speed multiplier)
+net jog-x-analog   gamepad_shim.jog-x
+net jog-y-analog   gamepad_shim.jog-y
+net jog-z-analog   gamepad_shim.jog-z
