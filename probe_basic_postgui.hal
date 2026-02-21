@@ -58,3 +58,17 @@ net machine-moving comp.0.out => oiler.0.motion-active
 net machine-homed motion.is-all-homed => oiler.0.home-all-complete
 # pump output (to a relay/SSR/PLC pin)
 net oilerpump oiler.0.pump => hm2_7c80.0.ssr.00.out-04
+
+# --- Idle shutdown: turn machine off after 30 min inactivity ---
+loadrt idle_shutdown
+addf idle_shutdown.0 servo-thread
+
+net motion-speed              => idle_shutdown.0.current-vel
+net idle-prog-running halui.program.is-running => idle_shutdown.0.program-running
+net prog-paused               => idle_shutdown.0.program-paused
+net spindle-enable            => idle_shutdown.0.spindle-on
+net machine-is-on             => idle_shutdown.0.machine-is-on
+net idle-machine-off idle_shutdown.0.shutdown => halui.machine.off
+
+# 30 minutes (1800 seconds)
+setp idle_shutdown.0.timeout 1800

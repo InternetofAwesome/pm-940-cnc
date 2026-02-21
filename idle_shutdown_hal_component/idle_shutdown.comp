@@ -1,0 +1,63 @@
+component idle_shutdown "Turn machine off after inactivity timeout";
+
+// Activity inputs — any one of these being active resets the idle timer
+pin in float current_vel;       // motion.current-vel
+pin in bit   program_running;   // halui.program.is-running
+pin in bit   program_paused;    // halui.program.is-paused
+pin in bit   spindle_on;        // motion.spindle-is-on
+pin in bit   user_activity;     // generic catch-all (jog buttons, gamepad, etc.)
+
+// Machine state
+pin in bit   machine_is_on;     // halui.machine.is-on
+
+// Outputs
+pin out bit  shutdown;          // connect to halui.machine.off
+pin out bit  idle;              // true when idle timer is running (no activity)
+
+// Tuning
+param rw float timeout = 1800;     // seconds before shutdown (default 30 min)
+param rw float idle_seconds = 0;   // current idle time (readable for debugging)
+
+function _;
+license "MIT";
+;;
+#include <math.h>
+
+FUNCTION(_) {
+    // Only run when machine is on
+    if (!machine_is_on) {
+        idle_seconds = 0;
+        shutdown = 0;
+        idle = 0;
+        return;
+    }
+
+    // Check if anything counts as activity
+    int active = 0;
+
+    if (fabs(current_vel) > 1e-6)
+        active = 1;
+    if (program_running)
+        active = 1;
+    if (program_paused)
+        active = 1;
+    if (spindle_on)
+        active = 1;
+    if (user_activity)
+        active = 1;
+
+    if (active) {
+        idle_seconds = 0;
+        shutdown = 0;
+        idle = 0;
+        return;
+    }
+
+    // No activity — accumulate idle time
+    idle = 1;
+    idle_seconds += fperiod;
+
+    if (idle_seconds >= timeout) {
+        shutdown = 1;
+    }
+}

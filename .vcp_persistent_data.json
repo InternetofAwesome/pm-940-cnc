@@ -2925,11 +2925,201 @@
             "task_mode": "Auto",
             "task_state": "On",
             "timestamp": 1771625098.183001
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/home/cnc/linuxcnc/nc_files/pb_examples/blank.ngc",
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771625308.5151901
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771625535.7719183
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771625706.565455
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771626833.3395712
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771627366.6533978
+        },
+        {
+            "interp_mode": "Waiting",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771627995.2180324
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Exceeded NEGATIVE soft limit (-6.80000) \n on joint 1",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "Reset",
+            "timestamp": 1771628282.4382818
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Joint must be unhomed, jogged \n into limits, rehomed",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "Reset",
+            "timestamp": 1771628282.633739
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771631000.9775712
+        },
+        {
+            "interp_mode": "Reading",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Auto",
+            "task_state": "On",
+            "timestamp": 1771631569.201799
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "joint 1 following error",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "On",
+            "timestamp": 1771632203.2144504
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Exceeded NEGATIVE soft limit (-13.12500) \n on joint 0",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771634338.9803414
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Joint must be unhomed, jogged \n into limits, rehomed",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771634339.320899
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Exceeded NEGATIVE soft limit (-6.80000) \n on joint 1",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771634862.287091
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Joint must be unhomed, jogged \n into limits, rehomed",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771634862.75409
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Exceeded NEGATIVE soft limit (-6.80000) \n on joint 1",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771634893.511574
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Joint must be unhomed, jogged \n into limits, rehomed",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771634893.7282455
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Exceeded NEGATIVE soft limit (-6.80000) \n on joint 1",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771634985.0783117
+        },
+        {
+            "interp_mode": "Idle",
+            "loaded_file": "/mnt/nc/trash.txt",
+            "message_text": "Joint must be unhomed, jogged \n into limits, rehomed",
+            "message_type": "error",
+            "operator_id": "",
+            "task_mode": "Manual",
+            "task_state": "Reset",
+            "timestamp": 1771634985.3071182
         }
     ],
     "settings": {
-        "machine.jog.angular-speed": 9180.0,
-        "machine.jog.linear-speed": 84.96600000000001,
+        "machine.jog.angular-speed": 7992.0,
+        "machine.jog.linear-speed": 73.9704,
         "probe-parameters.calibration-offset": 0.001633,
         "probe-parameters.diameter-hint": 0.25,
         "probe-parameters.extra-probe-depth": -0.06,
@@ -2954,7 +3144,8 @@
         "tool-setter-probe.spindle-nose-height": 16.4402,
         "tool-setter-probe.traverse-fr": 100.0,
         "tool-setter-probe.xy-max-travel": 1.0,
-        "tool-setter-probe.z-max-travel": 16.3926
+        "tool-setter-probe.z-max-travel": 16.3926,
+        "virtual-input.enable": true
     },
     "tool-in-spindle": 11
 }
