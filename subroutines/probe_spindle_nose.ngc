@@ -1,9 +1,10 @@
 (author: Chris P)
-(version: 0.1)
-(date: 01/28/26)
+(version: 0.2)
+(date: 08/02/26)
 
 (Probe Spindle Nose in Z Minus direction over tool setter and set Spindle Zero Distance)
-(Start probe position is over toolsetter platter within max z distance)
+(Start probe position is over toolsetter platter within max z distance,)
+(or enable Auto Position #3040 to have this sub travel to the tool setter first)
 (ensure all settings have been set properly according to help diagrams)
 
 o<probe_spindle_nose> sub
@@ -16,6 +17,9 @@ o<probe_spindle_nose> sub
   #<probe_traverse_fr> = #3006    (=50)
   #<max_z_distance> = #3007       (=12.5)
   #<retract_distance> = #3009     (=0.1000)
+  #<auto_position> = #3040        (=0)
+  #<auto_position_x_offset> = #3041   (=0)
+  #<auto_position_y_offset> = #3042   (=0)
 
   (Cancel G92 offsets)
   G92.1
@@ -25,6 +29,18 @@ o<probe_spindle_nose> sub
   o100 if [2 EQ 2]
     G49
   o100 endif
+
+  (Optional Auto Position, disabled by default so existing behaviour is unchanged.)
+  (When enabled, travel to the G30 position before probing. Machines whose tool)
+  (setter does not sit under the spindle nose at the G30 point can nudge the)
+  (approach with the X/Y offsets. Z retracts to machine zero first so the move)
+  (across cannot drag the spindle nose through anything.)
+  o130 if [#<auto_position> GT 0]
+      G90
+      G53 G1 F[#<probe_traverse_fr>] Z0
+      G53 G1 F[#<probe_traverse_fr>] X[#5181 + #<auto_position_x_offset>] Y[#5182 + #<auto_position_y_offset>]
+      G53 G1 F[#<probe_traverse_fr>] Z#5183
+  o130 endif
 
   #<offset_z> = #5422
 
