@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Coolant / mist control button for the PM-940.
+
+  WHY THIS EXISTS: Probe Basic 0.6.0 shipped Flood and Mist toggle buttons in
+  the main layout (src/probe_basic/probe_basic.ui). In 0.6.8 upstream dropped
+  them from probe_basic.ui - they now only appear in probe_basic_vertical.ui,
+  which this machine does not use ([DISPLAY]DISPLAY = probe_basic). This user
+  button restores the control without patching the installed .ui, which would
+  be overwritten on the next apt upgrade.
+
+  HAL MAPPING (see pm940.hal - the builtin names are deliberately repurposed):
+    coolant.flood.toggle maps to iocontrol.0.coolant-flood,
+                         then net cool-mist, then ssr.00.out-07 / out-06.
+                         That is the ACTUAL MIST on this machine, and it is
+                         the button wired up below.
+    coolant.mist.toggle  maps to iocontrol.0.coolant-mist,
+                         then net cool-air, which is COMMENTED OUT in pm940.hal
+                         and therefore inert. Not shipped here on purpose: a
+                         button that silently does nothing on a machine tool is
+                         worse than no button at all.
+
+  TO ADD AN AIR BUTTON: uncomment the cool-air net in pm940.hal, then
+  uncomment the second ActionButton block below and its gridLayout position.
+-->
+<ui version="4.0">
+ <class>USER_BUTTONS</class>
+ <widget class="QWidget" name="USER_BUTTONS">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>285</width>
+    <height>60</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Coolant Buttons</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>3</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <property name="horizontalSpacing">
+    <number>3</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="ActionButton" name="mist_button">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>130</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+   	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Mist</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>coolant.flood.toggle</string>
+     </property>
+    </widget>
+   </item>
+   <!-- AIR button - inert until the cool-air net is uncommented in pm940.hal.
+   <item row="0" column="1">
+    <widget class="ActionButton" name="air_button">
+     <property name="minimumSize">
+      <size>
+       <width>130</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>Air</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="actionName" stdset="0">
+      <string>coolant.mist.toggle</string>
+     </property>
+    </widget>
+   </item>
+   -->
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ActionButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.button_widgets.action_button</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
